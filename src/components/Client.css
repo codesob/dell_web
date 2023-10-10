@@ -1,0 +1,68 @@
+/* Body.css */
+
+.dell-container {
+    margin: 10px;
+  }
+  
+  .s-text {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  
+  .bubble {
+    background-color: rgb(148, 196, 76);
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  
+  .text {
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+  
+  .three-divs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+    width: 90%;
+}
+  
+  .profile {
+    text-align: center;
+    margin: 0px; /* Add margin for spacing */
+  }
+  
+  .profile p {
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  
+  .profile-image {
+    width: 100px; /* Adjust the image size as needed */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0px;
+  }
+  
+  .profile-text {
+    padding: 10px; /* Adjust padding as needed */
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px; /* Add margin for spacing */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .three-divs {
+      flex-direction: row; /* Stack items vertically on small screens */
+      align-items: center; /* Center items on small screens */
+    }
+  }
+  

@@ -1,0 +1,74 @@
+/* Navbar.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+.nav {
+  background-color: rgb(17, 17, 68);
+  color: white;
+  width: auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-list li {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.navbar-list li a {
+  color: skyblue;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.navbar-list li a:hover {
+  background-color: skyblue;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-left: 10px;
+  color: white; 
+}
+
+.social-icons a:hover {
+  color: white; 
+}
+
+
+.social-icons a:nth-child(5) {
+  background-color: orange;
+  background-size: 120% cover;
+  size: 15px;
+}
+
+
+@media (max-width: 767px) {
+  .navbar-list li a {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

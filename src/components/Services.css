@@ -1,0 +1,199 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: transparent;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div1 {
+  color: white;
+  width: 100%;
+  height: 400px;
+  background-image: url('./images/lup.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.div1 h2 {
+  font-size: 2em;
+}
+
+.div1 p {
+  font-size: 1.2em;
+}
+
+
+.div1 {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.div1.scroll {
+  opacity: 0;
+}
+
+.div1 h2, .div1 p {
+  margin: 0;
+  padding: 20px;
+}
+
+.div2, .div3, .div4, .div5, .div6 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.left-content, .right-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.rating-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.small-item {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin: 0px;
+  padding: 40px;
+}
+
+.small-item i {
+  font-size: 24px;
+  margin-right: 10px;
+  
+}
+
+.rating-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: 80%; /* Set the max-width to 100% */
+  margin: 0 auto;
+}
+
+.text-section, .bar-graphs {
+  margin-bottom: 10px;
+}
+
+.text-section label, .bar-graphs p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.text-section input, .text-section textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+/* YourComponent.css */
+
+.bar-graphs {
+  margin-top: 20px;
+}
+
+.bar-graphs p {
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating label {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label:before {
+  content: '★';
+}
+
+.rating .checked:before {
+  content: '★';
+  color: gold;
+}
+
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3498db;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+.div3 {
+  display: flex;
+  justify-content: space-around; /* Equal spacing between items */
+  align-items: center; /* Align items vertically in the middle */
+}
+
+.small-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Arrange icon and text in a column */
+  margin: 10px;
+  text-align: center; /* Center the text */
+}
+
+.small-item p {
+  margin-top: 5px; /* Space between icon and text */
+}
+
+.small-item svg {
+  font-size: 36px; /* Adjust the icon size as needed */
+}
+
+.dell-container {
+  margin: 10px;
+}
+
+.v-text {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bubble {
+  background-color: rgb(148, 196, 76);
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.text {
+  font-size: 24px;
+  font-weight: bold;
+}
+

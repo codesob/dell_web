@@ -1,0 +1,205 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.support-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-right: 161px;
+  
+}
+
+.contact-info {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.contact-info.scroll {
+  opacity: 0;
+}
+
+
+.contact-info {
+  color: rgb(255, 255, 255);
+  padding: 90px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+}
+
+
+
+.image-section {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-section {
+  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 10px;
+  font-weight: bold;
+  display: flex;
+}
+
+.icon-section .small-item {
+  flex: 1;
+  margin: 10px;
+}
+
+.hover-section {
+  background-image: url('./images/two.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: rgb(255, 255, 255);
+  padding: 60px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.hover-section .left-content {
+  width: 50%;
+}
+
+.hover-section .right-content {
+  width: 60%;
+  display: flex;
+  justify-content: center; /* Center the hexagons */
+  align-items: center;
+}
+
+
+
+.hexagon::before, .hexagon::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 115.47px;
+  background-color: #ffffff;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+  margin: -20px;
+  margin-left: 100px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-image: url(./images/03.jpg);
+  background-size: cover;
+  
+}
+
+.hexagon1::before, .hexagon1::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 115.47px;
+  background-color: #ffffff;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+  margin: -20px;
+  margin-left: -60px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-image: url(./images/02.jpg);
+  background-size: cover;
+}
+.hexagon2::before, .hexagon2::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 120.5px;
+  background-color: #ffffff;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+  margin: -130px;
+  margin-left: 20px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+ background-image: url(./images/01.jpg);
+ background-size: cover;
+}
+
+.contact-info,
+.image-section,
+.icon-section,
+.hover-section {
+  width: 100%;
+  display: flex;
+}
+
+.icon-section .small-item {
+  flex: 1;
+  margin: 10px;
+}
+
+.small-item{
+  background-color: #faf9f9;
+  align-content:space-evenly ;
+ 
+  color: #070149;
+}
+
+
+.sky-blue-btn {
+  background-color: skyblue;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.sky-blue-btn:hover {
+  background-color: lightblue;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: skyblue;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.dropdown-container:hover .dropdown-content {
+  display: block;
+}
+
+.right-content {
+  text-align: center; 
+  color: #fcfcfc;
+}
+
+.right-content textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px; 
+}
+
+.right-content button {
+  display: block;
+  width: 100%;
+}
+
+.right-content {
+  text-align: left;
+}
+
+.textarea-container {
+  margin-bottom: 10px; /* Add some space between text and text areas */
+}
+
+.textarea-container textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.right-content button {
+  display: block;
+  width: 100%;
+}
